@@ -1,1 +1,233 @@
-<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- Масштабирование для мобильных устройств -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Пиццерия — Главная</title>
+
+    <!-- Подключение базовых стилей (черновой вариант, позже расширю) -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+</head>
+<body>
+
+    <!-- ========================= HEADER ========================= -->
+    <!-- Шапка сайта с логотипом, меню и кнопкой корзины -->
+    <header class="header">
+        <div class="container header__inner">
+
+            <!-- Логотип -->
+            <a href="index.html" class="header__logo">
+                <!-- Позже заменю на svg/png из ассетов -->
+                <img src="assets/images/logo.png" alt="Логотип пиццерии">
+            </a>
+
+            <!-- Основное меню -->
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Кнопка корзины -->
+            <a href="cart.html" class="header__cart-btn">
+                <img src="assets/icons/cart.svg" alt="Корзина">
+                <span class="header__cart-count">0</span>
+            </a>
+
+            <!-- Мобильное меню (гамбургер) -->
+            <button class="header__burger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- ========================= HERO / ПЕРВЫЙ ЭКРАН ========================= -->
+    <!-- Большой баннер с заголовком, описанием и кнопками -->
+    <section class="hero">
+        <div class="container hero__inner">
+
+            <!-- Левая часть: текст -->
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Вкусная пицца <br> с доставкой на дом
+                </h1>
+
+                <p class="hero__subtitle">
+                    Приготовлено из свежих ингредиентов. Выберите свою любимую пиццу!
+                </p>
+
+                <div class="hero__buttons">
+                    <a href="menu.html" class="btn btn--primary">Посмотреть меню</a>
+                    <a href="about.html" class="btn btn--secondary">О нас</a>
+                </div>
+            </div>
+
+            <!-- Правая часть: изображение пиццы из макета -->
+            <div class="hero__image">
+                <img src="assets/images/hero-pizza.png" alt="Пицца">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ========================= POPULAR PIZZAS ========================= -->
+    <!-- Блок популярных позиций меню -->
+    <section class="popular">
+        <div class="container">
+
+            <!-- Заголовок блока -->
+            <h2 class="section-title">Популярные пиццы</h2>
+
+            <!-- Сетка карточек пицц -->
+            <div class="popular__grid">
+
+                <!-- Карточка пиццы -->
+                <article class="pizza-card">
+                    <img src="assets/images/pizza-1.png" alt="Маргарита" class="pizza-card__image">
+
+                    <h3 class="pizza-card__title">Маргарита</h3>
+
+                    <p class="pizza-card__desc">
+                        Классическая пицца с сыром моцарелла и томатами.
+                    </p>
+
+                    <div class="pizza-card__footer">
+                        <span class="pizza-card__price">550 ₽</span>
+                        <button class="btn btn--small">В корзину</button>
+                    </div>
+                </article>
+
+                <!-- Ещё карточки (будут заменены под реальные из макета) -->
+                <article class="pizza-card">
+                    <img src="assets/images/pizza-2.png" alt="Пепперони" class="pizza-card__image">
+                    <h3 class="pizza-card__title">Пепперони</h3>
+                    <p class="pizza-card__desc">Острая, ароматная и очень вкусная.</p>
+                    <div class="pizza-card__footer">
+                        <span class="pizza-card__price">620 ₽</span>
+                        <button class="btn btn--small">В корзину</button>
+                    </div>
+                </article>
+
+                <!-- ... и так далее -->
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ========================= BENEFITS ========================= -->
+    <!-- Преимущества (доставка, свежие продукты, скидки и т.д.) -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+
+            <div class="benefits__grid">
+
+                <!-- Элемент преимущества -->
+                <div class="benefit">
+                    <img src="assets/icons/delivery.svg" class="benefit__icon">
+                    <h3 class="benefit__title">Быстрая доставка</h3>
+                    <p class="benefit__text">
+                        Доставляем пиццу в среднем за 30–40 минут.
+                    </p>
+                </div>
+
+                <div class="benefit">
+                    <img src="assets/icons/fresh.svg" class="benefit__icon">
+                    <h3 class="benefit__title">Свежие ингредиенты</h3>
+                    <p class="benefit__text">
+                        Только натуральные продукты, никаких полуфабрикатов.
+                    </p>
+                </div>
+
+                <div class="benefit">
+                    <img src="assets/icons/discount.svg" class="benefit__icon">
+                    <h3 class="benefit__title">Скидки и акции</h3>
+                    <p class="benefit__text">
+                        Постоянные акции для наших гостей.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================= TESTIMONIALS ========================= -->
+    <!-- Блок отзывов клиентов -->
+    <section class="testimonials">
+        <div class="container">
+
+            <h2 class="section-title">Отзывы клиентов</h2>
+
+            <div class="testimonials__list">
+
+                <div class="testimonial">
+                    <p class="testimonial__text">
+                        "Очень вкусная пицца и быстрая доставка. Обязательно закажу снова!"
+                    </p>
+                    <span class="testimonial__author">— Анна</span>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial__text">
+                        "Шикарное тесто и много сыра. Всем рекомендую."
+                    </p>
+                    <span class="testimonial__author">— Дмитрий</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ========================= FOOTER ========================= -->
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container footer__inner">
+
+            <div class="footer__col">
+                <img src="assets/images/logo.png" alt="Логотип" class="footer__logo">
+                <p>Лучшая пицца в городе. Натуральные ингредиенты, вкусные рецепты.</p>
+            </div>
+
+            <div class="footer__col">
+                <h3>Меню</h3>
+                <ul>
+                    <li><a href="menu.html">Пицца</a></li>
+                    <li><a href="menu.html">Закуски</a></li>
+                    <li><a href="menu.html">Напитки</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h3>Контакты</h3>
+                <ul>
+                    <li>+7 900 000-00-00</li>
+                    <li>ул. Примерная, 12</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Основной JS -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

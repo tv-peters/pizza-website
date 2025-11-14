@@ -1,1 +1,53 @@
-/* footer.css */
+/* ===== FOOTER ===== */
+
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer__col {
+    flex: 1;
+}
+
+.footer__logo {
+    width: 140px;
+    margin-bottom: 20px;
+}
+
+.footer__col h3 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer__col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__col a {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.footer__col a:hover {
+    opacity: 1;
+}
+
+
+/* ===== АДАПТИВ ===== */
+
+@media (max-width: 768px) {
+    .footer__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}

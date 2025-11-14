@@ -1,0 +1,11 @@
+font-body: Montserrat
+font-heading: Playfair Display
+font-default: Roboto
+color-red: D62828
+color-olive: 3D5A2B
+color-tomato: A81817
+h1: 60
+h3: 18
+color-black: 1D1D1D
+pizza-card-heading: 18
+section-heading-responsive: 30

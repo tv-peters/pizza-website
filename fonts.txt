@@ -1,0 +1,3 @@
+font-body: Montserrat
+font-heading: Playfair Display
+font-default: Roboto

@@ -1,1 +1,178 @@
-/* home.css */
+/* ===== HERO (первый экран) ===== */
+
+.hero {
+    padding: 80px 0;
+    background: #FFF5EF; /* временный цвет, заменю по макету */
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Левая часть */
+.hero__title {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero__subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 32px;
+}
+
+/* Правая часть — картинка */
+.hero__image img {
+    width: 450px;
+    height: auto;
+}
+
+
+/* ===== POPULAR PIZZAS ===== */
+
+.popular {
+    padding: 80px 0;
+}
+
+.popular__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+/* Карточка пиццы */
+.pizza-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+}
+
+.pizza-card:hover {
+    transform: translateY(-4px);
+}
+
+.pizza-card__title {
+    font-size: 20px;
+    margin: 16px 0 8px;
+    font-weight: 700;
+}
+
+.pizza-card__desc {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 16px;
+}
+
+.pizza-card__footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pizza-card__price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FF6536;
+}
+
+
+/* ===== BENEFITS ===== */
+
+.benefits {
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+.benefits__grid {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.benefit {
+    text-align: center;
+    flex: 1;
+}
+
+.benefit__icon {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.benefit__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ===== TESTIMONIALS ===== */
+
+.testimonials {
+    padding: 80px 0;
+}
+
+.testimonials__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 26px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+}
+
+.testimonial__text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.testimonial__author {
+    font-weight: 700;
+    color: #FF6536;
+}
+
+
+
+/* ===== АДАПТИВ ===== */
+
+@media (max-width: 1024px) {
+    .popular__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero__image img {
+        width: 330px;
+    }
+}
+
+@media (max-width: 768px) {
+    .popular__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits__grid {
+        flex-direction: column;
+        text-align: center;
+    }
+}

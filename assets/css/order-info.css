@@ -1,1 +1,58 @@
-/* order-info.css */
+/* Основной шрифт — позже заменю на тот, что есть в ассетах */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+/* Центрирование контента */
+.container {
+    width: 100%;
+    max-width: 1220px; /* фиксируем ширину контента */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Заголовки секций */
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* ===== КНОПКИ ===== */
+
+.btn {
+    padding: 14px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.25s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn--primary {
+    background: #FF6536; /* временный цвет — заменю по макету */
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background: #e85324;
+}
+
+.btn--secondary {
+    background: transparent;
+    border: 2px solid #FF6536;
+    color: #FF6536;
+}
+
+.btn--secondary:hover {
+    background: #FF6536;
+    color: #fff;
+}
+
+.btn--small {
+    padding: 10px 18px;
+    font-size: 14px;
+}

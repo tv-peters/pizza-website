@@ -1,1 +1,86 @@
-/* header.css */
+/* ===== HEADER / ШАПКА ===== */
+
+.header {
+    width: 100%;
+    background: #ffffff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid #eee;
+}
+
+/* Внутренняя сетка */
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Меню */
+.header__nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+.header__nav a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.header__nav a:hover {
+    color: #FF6536;
+}
+
+/* Корзина */
+.header__cart-btn {
+    position: relative;
+}
+
+.header__cart-btn img {
+    width: 28px;
+}
+
+.header__cart-count {
+    position: absolute;
+    right: -10px;
+    bottom: -6px;
+    background: #FF6536;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Кнопка бургер (мобильное меню) */
+.header__burger {
+    display: none; /* покажу на мобильной */
+    flex-direction: column;
+    gap: 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header__burger span {
+    width: 26px;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+}
+
+
+/* ===== АДАПТИВ HEADER ===== */
+
+@media (max-width: 768px) {
+
+    /* Показываем бургер и скрываем обычное меню */
+    .header__burger {
+        display: flex;
+    }
+
+    .header__nav {
+        display: none;
+    }
+}
